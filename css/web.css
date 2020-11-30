@@ -1,0 +1,353 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.navbar,
+.services,
+.our-team,
+.testimonial,
+.our-projects,
+.footer {
+  min-width: 1200px;
+}
+/* Start navigation bar */
+.navbar {
+  margin-top: -27px;
+  height: 0;
+  color: #fff;
+}
+.navbar .brand {
+  float: left;
+  width: 40%;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.navbar .brand span {
+  color: #1abc9c;
+}
+.navbar .links {
+  float: left;
+  width: 60%;
+  margin-top: 9px;
+  font-size: 17px;
+  margin-top: 40px;
+}
+.navbar .links li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .links li.active,
+.navbar .links li:hover {
+  border-bottom: 2px solid #1abc9c;
+  color: #1abc9c;
+}
+.navbar .links li.active a,
+.navbar .links li a:hover {
+  color: #1abc9c;
+}
+/* End navigation bar */
+
+/*Start framework */
+.clearfix {
+  clear: both;
+}
+.special-heading {
+  position: relative;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 50px 0;
+}
+.special-heading:after {
+  content: "";
+  border-bottom: 2px solid #333;
+  position: absolute;
+  width: 48px;
+  display: block;
+  top: 40px;
+  left: 0;
+}
+/*End framework */
+
+/* Start Header */
+.header {
+  background: url("../images/12.jpg");
+  background-repeat: no-repeat;
+}
+.header h1 {
+  padding-top: 291px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.header h1 span {
+  color: #1abc9c;
+}
+.header p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+/* End Header */
+
+/* Start our services */
+.services .item {
+  width: 33.33333%;
+  float: left;
+  margin-bottom: 20px;
+}
+.services .item i {
+  width: 17%;
+  float: left;
+  color: #1abc9c;
+  margin-right: 8%;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.services .item .info {
+  width: 70%;
+  float: left;
+  text-align: center;
+}
+.services .item .info h3 {
+  font-weight: normal;
+  color: #6f6d6d;
+}
+.services .item .info p {
+  color: #a7a2a2;
+  line-height: 1.4;
+  text-align: left;
+}
+/* End our services */
+
+/* start our team*/
+.our-team {
+  overflow: hidden;
+}
+.container {
+  overflow: hidden;
+}
+
+.container hr {
+  margin: 40px;
+  border: 1px solid rgb(199, 196, 196);
+}
+.our-team .box {
+  float: left;
+}
+.our-team .box p {
+  color: #5f5a5a;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.our-team .box img {
+  width: 180px;
+  height: 140px;
+}
+.our-team .box:first-child {
+  width: 25%;
+}
+.our-team .box:not(:first-child) {
+  width: 10.75%;
+  margin-left: 2%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+/* end our team */
+
+/* start testimonial */
+.testimonial {
+  background: url("../images/10.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  margin: 70px 0 0;
+  text-align: center;
+  padding: 50px 0;
+}
+.testimonial .t-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.testimonial .t-overlay h2 {
+  font-size: 40px;
+  margin: 70px 0 40px;
+}
+.testimonial .t-overlay p {
+  color: #b1a1a1;
+  width: 65%;
+  margin: auto;
+  line-height: 1.6;
+  margin-bottom: 90px;
+}
+.testimonial .t-overlay span {
+  color: #1abc9c;
+  font-size: 25px;
+}
+/* end testimonial */
+
+/* start project */
+
+.our-projects ul {
+  margin: 50px 0;
+  margin-left: -40px;
+}
+.our-projects ul li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  color: #a7a7a7;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.our-projects ul li.selected {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.our-projects .gallery {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.our-projects .mix {
+  display: inline-block; /* for mixitup */
+}
+.our-projects .gallery .row > div {
+  width: 32%;
+  float: left;
+  height: 210px;
+  margin-bottom: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.our-projects .gallery .row > div:hover .over,
+.our-projects .gallery .row > div:hover .heart {
+  display: block;
+}
+.our-projects .gallery .row > div .heart {
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.our-projects .gallery .row > div .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1abc9c;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 210px;
+  display: none;
+}
+.our-projects .gallery .row > div:nth-child(2) {
+  margin: 0 2%;
+}
+.our-projects .gallery .row > div img {
+  width: 100%;
+  height: 100%;
+}
+/* end project */
+
+/* Start footer */
+.footer {
+  background-color: #0e0e0e;
+  color: #6f6d6d;
+  padding: 40px 0;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.footer .col {
+  width: 25%;
+  float: left;
+}
+.footer .col h2 {
+  color: #ccc;
+  font-weight: normal;
+  font-size: 25px;
+}
+.footer .col p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.footer .col i {
+  display: inline-block;
+  color: #847474;
+  border: 1px solid#6f6d6d;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer .tags span {
+  display: inline-block;
+  color: #847474;
+  border: 1px solid #6f6d6d;
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.footer .recent div {
+  overflow: hidden;
+  cursor: pointer;
+}
+.footer .recent div img {
+  float: left;
+  width: 32%;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+.footer .recent div h4 {
+  font-weight: normal;
+  margin: 7px 0;
+  color: #a9a9a9;
+}
+.footer .recent div span {
+  font-size: 13px;
+}
+.footer .blog ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer .blog ul li {
+  border-bottom: 1px solid #a9a9a9;
+  padding: 15px;
+  display: block;
+  cursor: pointer;
+}
+/* end footer */
